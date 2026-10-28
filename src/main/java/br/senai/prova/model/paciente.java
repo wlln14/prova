@@ -18,6 +18,10 @@ public class paciente {
     @NotBlank(message = "Informe o nome do paciente")
     private String nome;
 
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_pai", nullable = false)
+    private pai pai;
+
     @JsonIgnore
     @OneToMany(mappedBy = "paciente")
     private List<consulta> consultas;
