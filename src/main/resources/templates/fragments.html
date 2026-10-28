@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="menu" class="sidebar">
+  <a class="brand" th:href="@{/}"><span class="brand-icon">✚</span><span>Clínica<span class="brand-light">Care</span><small>PAINEL ADMINISTRATIVO</small></span></a>
+  <span class="nav-label">MENU PRINCIPAL</span>
+  <a class="nav-link" th:href="@{/}"><span>▦</span> Visão geral</a>
+  <a class="nav-link" th:href="@{/pacientes}"><span>♙</span> Pacientes</a>
+  <a class="nav-link" th:href="@{/responsaveis}"><span>♧</span> Responsáveis</a>
+  <a class="nav-link" th:href="@{/consultas}"><span>▣</span> Consultas</a>
+  <a class="nav-link" th:href="@{/usuarios}"><span>⚙</span> Usuários</a>
+  <div class="sidebar-bottom"><div class="avatar">CC</div><div><strong>Clínica Care</strong><small>Sistema de gestão</small></div></div>
+</nav>
+</body>
+</html>
